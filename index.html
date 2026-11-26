@@ -11,20 +11,42 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
   </head>
   <body>
     <section class="header">
       <nav>
         <a href=""><img src="img/logo.png" alt="logo" /></a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </div>
-      </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          enim iure et ad possimus, necessitatibus est modi ea culpa adipisci
+          provident. <br />Laudantium omnis eum rerum nostrum dolorem aspernatur
+          eaque! Ducimus?
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
     </section>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
