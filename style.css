@@ -1,6 +1,6 @@
 :root {
-  --primary: #acdeff;
-  --dark-primary: #0976be;
+  --primary: rgb(172, 222, 255);
+  --dark-primary: rgb(9, 118, 190);
   --white: #fff;
   --grey: #777;
 }
@@ -189,3 +189,96 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* -----campus----- */
+
+.campus {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background-color: rgba(111, 193, 248, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 28px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 100%;
+}
+
+/* -----Facilities----- */
+.facilities{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p {
+  padding: 0;
+  text-align: left;
+  margin-bottom: 28px;
+  
+}
+
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+
+
+
+
